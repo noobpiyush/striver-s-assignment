@@ -10,7 +10,7 @@ export const SubmissionList = () => {
   useEffect(() => {
     const fetchSubmissions = async () => {
       try {
-        const response = await axios.get(`http://localhost:3000/submissions/${username}`);
+        const response = await axios.get(`http://13.126.252.210:3000/submissions/${username}`);
         setSubmissions(response.data);
       } catch (error) {
         console.error('Error fetching submissions:', error);

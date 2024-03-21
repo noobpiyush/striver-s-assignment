@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import axios from 'axios'
 import { Navigate, useNavigate } from 'react-router-dom';
 
+
 export const SubmissionForm = () => {
   const [username, setUsername] = useState('JohnDoe');
   const [language, setLanguage] = useState('java');
@@ -23,7 +24,7 @@ public class AddNumbers {
   const handleSubmit = async (e, to) => {
     e.preventDefault();
     try {
-      const response = await axios.post("http://localhost:3000/submit", {
+      const response = await axios.post("http://13.126.252.210:4000/submit", {
         username,
         language,
         Stdinput: stdin,
